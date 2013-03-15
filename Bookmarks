@@ -1,5 +1,3 @@
-http://ruby.railstutorial.org/chapters/static-pages#sec-adding_a_page
+rvm get head && rvm reload
 
-http://ruby.railstutorial.org/chapters/static-pages#sec-testing_a_title_change
-
-http://ruby.railstutorial.org/chapters/static-pages#sec-embedded_ruby
+http://ruby.railstutorial.org/chapters/rails-flavored-ruby#top

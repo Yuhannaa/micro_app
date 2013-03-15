@@ -1,10 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'pg', '0.12.2'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  # gem 'guard-spork', '1.2.0'
+  # http://stackoverflow.com/questions/14590399/error-on-start-when-using-spork-and-guard
+  gem 'guard-spork', :github => 'guard/guard-spork'
+  gem 'spork', '0.9.2'
 end
 
 # Gems used only for assets and not required
@@ -17,10 +22,11 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
+# Test gems on Linux
 group :test do
   gem 'capybara', '1.1.2'
+  # gem 'rb-inotify', '0.8.8'
+  gem 'rb-inotify', '~> 0.9'
+  gem 'libnotify', '0.5.9'
 end
 
-group :production do
-  gem 'pg', '0.12.2'
-end
